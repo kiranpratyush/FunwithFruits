@@ -17,7 +17,7 @@ export default function App() {
     "🍑": "Peach",
     "🍒": "Cherries",
     "🍓": "Strawberry",
-    "🫐": "Blueberries",
+    "🥕": "carrot",
     "🍅": "Tomato"
   };
   const [meaning, setMeaning] = useState("");
