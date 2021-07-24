@@ -8,7 +8,7 @@
   padding: 0px;
   font-family: "Lato", sans-serif;
 }
-body {
+html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -21,8 +21,9 @@ body {
 }
 
 .Fruits {
-  max-width: 1000px;
-  margin: 2rem auto;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 2rem;
 }
 
 .fruit-List li {
