@@ -45,6 +45,9 @@ export default function App() {
       setMeaning(newMeaning);
     }
   }
+  function getKeyByValue(object, value) {
+    return Object.keys(object).find((key) => object[key] === value);
+  }
   return (
     <div className="App">
       <h1>Fun with Fruits</h1>
@@ -52,7 +55,11 @@ export default function App() {
       <div>
         <h2>Enter a fruit or choose any fruit below to know its name</h2>
       </div>
-      <input type="text" onChange={(event) => onChangeHandler(event)} />
+      <input
+        type="text"
+        onChange={(event) => onChangeHandler(event)}
+        placeholder={getKeyByValue(fruitDictionary, meaning)}
+      />
       <div className="meaning">{meaning}</div>
       <div className="Fruits">
         <ul className="fruit-List">{listFruits()}</ul>

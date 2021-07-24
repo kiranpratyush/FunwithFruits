@@ -9,7 +9,7 @@
   font-family: "Lato", sans-serif;
 }
 body {
-  background-repeat: no-repeat;
+  background-color: #4158d0;
   background-position: center;
   background-size: cover;
   background-image: linear-gradient(
@@ -21,7 +21,7 @@ body {
 }
 
 .Fruits {
-  max-width: 900px;
+  max-width: 700px;
   margin: 0 auto;
   margin-top: 2rem;
 }
@@ -67,4 +67,16 @@ div h2 {
   text-align: center;
   max-width: 500px;
   margin: 2rem auto;
+}
+@media (orientation: portrait) {
+  body {
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(
+      90deg,
+      #4158d0 0%,
+      #c850c0 46%,
+      #ffcc70 100%
+    );
+  }
 }
